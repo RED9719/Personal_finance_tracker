@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savings | FinanceApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">FinanceApp</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="transaction.html">Transactions</a></li>
+      <li><a href="saving.html">Savings</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Manage Savings</h1>
+    <p>Track your savings goals and contributions.</p>
+  </header>
+
+  <!-- Savings Form -->
+  <section class="form-section">
+    <form id="savings-form">
+      <input type="text" id="savings-desc" placeholder="Savings Purpose" required />
+      <input type="number" id="savings-amount" placeholder="Amount" required />
+      <button type="submit">Add Savings</button>
+    </form>
+  </section>
+
+  <!-- Savings History -->
+  <section class="history-section">
+    <h3>Savings History</h3>
+    <ul id="savings-history"></ul>
+  </section>
+</body>
+</html>

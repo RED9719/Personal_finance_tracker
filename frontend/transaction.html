@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transactions | FinanceApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="transaction.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">FinanceApp</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="transaction.html">Transactions</a></li>
+      <li><a href="saving.html">Savings</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Manage Transactions</h1>
+    <p>Add, edit, or delete your financial records.</p>
+  </header>
+
+  <!-- Transaction Form -->
+  <section class="form-section">
+    <form id="transaction-form">
+      <input type="text" id="desc" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+        <option value="saving">Savings</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+  <!-- Transaction History -->
+  <section class="history-section">
+    <h3>Transaction History</h3>
+    <ul id="history"></ul>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+</html>

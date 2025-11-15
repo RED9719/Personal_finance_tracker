@@ -1,0 +1,206 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #333;
+}
+
+/* Dark Mode Toggle */
+.dark-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Summary Cards */
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form Section */
+.form-section {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input, select {
+  background-color: #111;
+  color: #fff;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Transaction History */
+.history-section {
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #111;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons inside list items */
+li button {
+  margin-left: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary-card {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode .summary-card,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode li {
+  background-color: #eee;
+  color: #000;
+}
+
+body.dark-mode button {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Preserve navbar styling in dark mode */
+
+
+body.dark-mode .nav-links li a {
+  color: #fff;
+  background-color: transparent;
+}
+
+body.dark-mode .nav-links li a:hover {
+  background-color: #333;
+}
+
+
+body.dark-mode .nav-links li a {
+  color: #fff;
+  background-color: transparent;
+}
+
+body.dark-mode .nav-links li a:hover {
+  background-color: #333;
+}
+

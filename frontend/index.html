@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">FinanceApp</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="transaction.html">Transactions</a></li>
+      <li><a href="saving.html">Savings</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+     
+      
+    </ul>
+  </nav>
+
+  <div class="dark-toggle">
+    <label>
+      <input type="checkbox" id="darkToggle" />
+      Dark Mode
+    </label>
+  </div>
+
+  <header>
+    <h1>Personal Finance Tracker</h1>
+    <p>Track your income, expenses, and savings in real time.</p>
+  </header>
+
+  
+
+  <!-- Summary Cards -->
+  <section class="summary">
+    <div class="summary-card" id="income">Income: ₹0</div>
+    <div class="summary-card" id="expenses">Expenses: ₹0</div>
+    <div class="summary-card" id="savings">Savings: ₹0</div>
+    <div class="summary-card" id="balance">Balance: ₹0</div>
+  </section>
+
+  <!-- Transaction History -->
+  <section class="history-section">
+    <h3>Transaction History</h3>
+    <ul id="history"></ul>
+  </section>
+</body>
+</html>
